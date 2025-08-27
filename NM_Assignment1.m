@@ -1,15 +1,4 @@
 %{
-Question 1
-%}
-%{
-function y = NM_Assignment1(x)
-    if x > 1 && x < 2
-        y = (x - 1).^3 .* (2 - x).^3;   % use elementwise operations
-    else
-        y = 0;
-    end
-end
-%}
 
 function NM_Assignment1(year)
 
@@ -27,3 +16,16 @@ function NM_Assignment1(year)
     end
 end
 
+%}
+
+
+%{
+function y = NM_Assignment1(x)
+
+    if(x > 1 && x < 2)
+        y = (x - 1).^3 * (2 - x).^3;
+    else
+        y = 0;
+    end
+end
+%}
